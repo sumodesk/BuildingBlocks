@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6EA4937-FC97-48A7-B822-5F756CAB4733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sumodesk.Distributed", "src\Sumodesk.Distributed\Sumodesk.Distributed.csproj", "{ABC78084-8D88-490D-BCF9-E28342D93D09}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABC78084-8D88-490D-BCF9-E28342D93D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC78084-8D88-490D-BCF9-E28342D93D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC78084-8D88-490D-BCF9-E28342D93D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC78084-8D88-490D-BCF9-E28342D93D09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ABC78084-8D88-490D-BCF9-E28342D93D09} = {E6EA4937-FC97-48A7-B822-5F756CAB4733}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B0B6D4F-7EF5-4B7E-AC47-757366441192}
