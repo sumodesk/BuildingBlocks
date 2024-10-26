@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Sumodesk.Domain\Sumodesk.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
