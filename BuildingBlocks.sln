@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sumodesk.Application", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sumodesk.Domain", "src\Sumodesk.Domain\Sumodesk.Domain.csproj", "{10D3072F-83F0-4125-B574-058266461F5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sumodesk.Infrastructure", "src\Sumodesk.Infrastructure\Sumodesk.Infrastructure.csproj", "{BADEC05F-6622-44C2-93BB-B76628469424}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{10D3072F-83F0-4125-B574-058266461F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D3072F-83F0-4125-B574-058266461F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D3072F-83F0-4125-B574-058266461F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADEC05F-6622-44C2-93BB-B76628469424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADEC05F-6622-44C2-93BB-B76628469424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADEC05F-6622-44C2-93BB-B76628469424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADEC05F-6622-44C2-93BB-B76628469424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{BCE7145E-346B-4C28-9745-8BC484CB45A3} = {E6EA4937-FC97-48A7-B822-5F756CAB4733}
 		{8B916263-77F2-42BB-8717-A2E60F58B0C1} = {E6EA4937-FC97-48A7-B822-5F756CAB4733}
 		{10D3072F-83F0-4125-B574-058266461F5F} = {E6EA4937-FC97-48A7-B822-5F756CAB4733}
+		{BADEC05F-6622-44C2-93BB-B76628469424} = {E6EA4937-FC97-48A7-B822-5F756CAB4733}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B0B6D4F-7EF5-4B7E-AC47-757366441192}
