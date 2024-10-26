@@ -1,0 +1,29 @@
+# This workflow will publish the packages
+
+name: Publish Packages
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+       fetch-depth: 100
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Create Sumodesk.Domain package
+      run: dotnet pack ./src/Sumodesk.Domain/Sumodesk.Domain.csproj --no-build --configuration Release -o nupkgs
+    - name: Publish packages
+      run: dotnet nuget push nupkgs/*.nupkg  --api-key ${{ secrets.PUBLISH_PACKAGES_TOKEN }} --source "https://nuget.pkg.github.com/sumodesk/index.json"
