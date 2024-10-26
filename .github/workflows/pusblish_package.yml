@@ -23,7 +23,11 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
+    - name: Create Sumodesk.DTOs package
+      run: dotnet pack ./src/Sumodesk.DTOs/Sumodesk.DTOs.csproj --no-build --configuration Release -o nupkgs
     - name: Create Sumodesk.Domain package
       run: dotnet pack ./src/Sumodesk.Domain/Sumodesk.Domain.csproj --no-build --configuration Release -o nupkgs
+    - name: Create Sumodesk.Infrastructure package
+      run: dotnet pack ./src/Sumodesk.Infrastructure/Sumodesk.Infrastructure.csproj --no-build --configuration Release -o nupkgs
     - name: Publish packages
       run: dotnet nuget push nupkgs/*.nupkg  --api-key ${{ secrets.PUBLISH_PACKAGES_TOKEN }} --source "https://nuget.pkg.github.com/sumodesk/index.json"
